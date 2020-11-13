@@ -13,7 +13,7 @@
     --fw-bold: 900;
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: rgb(68, 221, 193);
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -294,7 +294,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpeg);
+    background-image: url(../img/services-bg.png);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
@@ -337,7 +337,12 @@ header {
     }
 }
 
+
+/* About me */
+
 .about-me {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -382,7 +387,10 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 250px;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
 }
 
 .portfolio__item {
@@ -444,4 +452,16 @@ header {
 
 .social-list__item {
     margin: 0 .5em;
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
